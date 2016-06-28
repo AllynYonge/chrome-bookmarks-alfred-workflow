@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>alfred-workflows by mdreizin</title>
+    <title>chrome-bookmarks-alfred-workflow by mdreizin</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -15,40 +15,74 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>alfred-workflows</h1>
-        <p>Workflows for Alfred 2</p>
+        <h1>chrome-bookmarks-alfred-workflow</h1>
+        <p>Chrome/Canary/Chromium bookmarks search workflow for Alfred</p>
 
-        <p class="view"><a href="https://github.com/mdreizin/alfred-workflows">View the Project on GitHub <small>mdreizin/alfred-workflows</small></a></p>
+        <p class="view"><a href="https://github.com/mdreizin/chrome-bookmarks-alfred-workflow">View the Project on GitHub <small>mdreizin/chrome-bookmarks-alfred-workflow</small></a></p>
 
 
         <ul>
-          <li><a href="https://github.com/mdreizin/alfred-workflows/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/mdreizin/alfred-workflows/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/mdreizin/alfred-workflows">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/mdreizin/chrome-bookmarks-alfred-workflow/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mdreizin/chrome-bookmarks-alfred-workflow/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mdreizin/chrome-bookmarks-alfred-workflow">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
-        <h1>
-<a id="alfred-workflows" class="anchor" href="#alfred-workflows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alfred Workflows</h1>
+        <p><a href="https://travis-ci.org/mdreizin/chrome-bookmarks-alfred-workflow"><img src="http://img.shields.io/travis/mdreizin/chrome-bookmarks-alfred-workflow/master.svg?style=flat-square" alt="Travis build status"></a>
+<a href="https://coveralls.io/r/mdreizin/chrome-bookmarks-alfred-workflow?branch=master"><img src="https://img.shields.io/coveralls/mdreizin/chrome-bookmarks-alfred-workflow/master.svg?style=flat-square" alt="Coverage Status"></a></p>
 
-<p>Workflows for Alfred 2</p>
+<h1 id="chrome-bookmarks-alfred-workflow">
+<a id="chrome-bookmarks-alfred-workflow" class="anchor" href="#chrome-bookmarks-alfred-workflow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>chrome-bookmarks-alfred-workflow</h1>
 
-<h1 id="chrome-bookmarks">
-<a id="chrome-bookmarks" class="anchor" href="#chrome-bookmarks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Chrome Bookmarks</h1>
+<blockquote>
+<p>Chrome/Canary/Chromium bookmarks search workflow for Alfred</p>
+</blockquote>
 
-<p><strong>Requirements:</strong> Python 2.7.x or above.</p>
+<ul>
+<li>[x] Google Chrome (<code>chrome</code>, <code>chrome-profiles</code>)</li>
+<li>[x] Google Chrome Canary (<code>canary</code>, <code>canary-profiles</code>)</li>
+<li>[x] Chromium (<code>chromium</code>, <code>chromium-profiles</code>)</li>
+</ul>
 
-<p>This workflow helps you search Google Chrome bookmarks by using a <code>chrome</code> (Google Chrome) or <code>canary</code> (Google Chrome Canary) or <code>chromium</code> (Chromium) keyword:</p>
+<p><img src="https://raw.github.com/mdreizin/chrome-bookmarks-alfred-workflow/master/.gitdown/bookmarks.gif" alt="">
+<img src="https://raw.github.com/mdreizin/chrome-bookmarks-alfred-workflow/master/.gitdown/profiles.gif" alt=""></p>
 
-<p><img src="https://raw.github.com/mdreizin/alfred-workflows/master/src/chrome-bookmarks/img/chrome.png" alt="">
-<img src="https://raw.github.com/mdreizin/alfred-workflows/master/src/chrome-bookmarks/img/canary.png" alt="">
-<img src="https://raw.github.com/mdreizin/alfred-workflows/master/src/chrome-bookmarks/img/chromium.png" alt=""></p>
+<h2 id="chrome-bookmarks-alfred-workflow-setup">
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h2>
 
-<p>Also you can specify which profile will be used by using a <code>chrome-profiles</code> (Google Chrome) or <code>canary-profiles</code> (Google Chrome Canary) or <code>chromium-profiles</code> (Chromium) keyword:</p>
+<ul>
+<li>Run <code>brew install go</code>
+</li>
+<li>Run <code>go get github.com/tools/godep</code>
+</li>
+<li>Run <code>godep restore</code>
+</li>
+</ul>
 
-<p><img src="https://raw.github.com/mdreizin/alfred-workflows/master/src/chrome-bookmarks/img/chrome_profiles.png" alt="">
-<img src="https://raw.github.com/mdreizin/alfred-workflows/master/src/chrome-bookmarks/img/canary_profiles.png" alt="">
-<img src="https://raw.github.com/mdreizin/alfred-workflows/master/src/chrome-bookmarks/img/chromium_profiles.png" alt=""></p>
+<h2 id="chrome-bookmarks-alfred-workflow-develop">
+<a id="develop" class="anchor" href="#develop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Develop</h2>
+
+<ul>
+<li>Run <code>make workflow</code>
+</li>
+<li>Open <code>./dist</code> folder</li>
+</ul>
+
+<h2 id="chrome-bookmarks-alfred-workflow-test">
+<a id="test" class="anchor" href="#test" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Test</h2>
+
+<ul>
+<li>Run <code>make test</code>
+</li>
+</ul>
+
+<h2 id="chrome-bookmarks-alfred-workflow-cover">
+<a id="cover" class="anchor" href="#cover" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cover</h2>
+
+<ul>
+<li>Run <code>make cover</code> or <code>make cover-html</code>
+</li>
+</ul>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/mdreizin">mdreizin</a></p>
